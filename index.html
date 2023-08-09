@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Permanent+Marker&family=Poppins&family=Roboto+Condensed&display=swap");
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			button {
+				cursor: pointer;
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: rgb(109, 112, 119);
+			}
+
+			header,
+			.main {
+				height: 20vh;
+				font-family: "Permanent Marker", cursive;
+			}
+			button {
+				font-family: "Permanent Marker", cursive;
+				padding: 20px;
+				font-size: 20px;
+				border-radius: 9px;
+				transition: all 0.3s ease;
+				border: none;
+			}
+
+			header {
+				margin-top: 50px;
+				font-family: "Permanent Marker", cursive;
+			}
+
+			.main > span {
+				font-size: 2rem;
+			}
+
+			.main > input {
+				font-size: 2rem;
+			}
+		</style>
+		<link rel="stylesheet" href="clock.css" />
+	</head>
+	<body>
+		<header>
+			<h1>To Do List</h1>
+			<div class="clock">
+				<span id="hour"></span>: <span id="min"></span>:
+				<span id="sec"></span>
+			</div>
+		</header>
+		<div class="main">
+			<span>Add a task</span> <input type="text" /> <button>Click</button>
+		</div>
+		<script src="clock.js"></script>
+	</body>
+</html>
